@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.sohancaterers.RegisterFiles.SignUpFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/backgroudnested"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_marginTop="0dp"
+                android:id="@+id/logo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sign_up"
+                android:textSize="40sp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textAlignment="center"
+                android:textStyle="italic"/>
+            <!-- Full name -->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/fullName"
+                    android:hint="@string/full_name"
+                    android:inputType="text"
+                    app:met_floatingLabel="normal"/>
+
+            <!-- Phone number -->
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneNumber"
+                    android:hint="@string/phone_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:minLines="10"
+                    app:met_maxCharacters="10"
+                    app:met_floatingLabel="normal"/>
+
+            <!-- Email -->
+
+                 <com.rengwuxian.materialedittext.MaterialEditText
+
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:id="@+id/emailName"
+                     android:hint="@string/email"
+                     android:inputType="textEmailAddress"
+                     app:met_floatingLabel="normal"/>
+
+            <!-- password -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                app:hintEnabled="false"
+                android:layout_marginTop="10dp">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/password"
+                    android:layout_marginTop="20dp"
+                    android:hint="@string/password_minimum_6_characters"
+                    android:inputType="textPassword"
+                    app:met_floatingLabel="normal"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--confirm password -->
+         <com.google.android.material.textfield.TextInputLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             app:passwordToggleEnabled="true"
+             app:hintEnabled="false"
+             android:layout_marginTop="10dp">
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/cpassword"
+                    android:layout_marginTop="20dp"
+                    app:met_floatingLabel="normal"
+                    android:hint="@string/confirm_password"
+                    android:inputType="textPassword"
+                     />
+         </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:layout_gravity="center"
+                android:background="@drawable/layout_backgroudcorner"
+                android:id="@+id/signup"
+                android:textColor="#80FFFFFF"
+                android:text="Sign Up"
+                android:layout_marginTop="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:enabled="false"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/have_an_account"
+                    android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sign_in"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView >
+</FrameLayout>

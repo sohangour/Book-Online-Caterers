@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment.account.AccountFragment"
+    android:orientation="vertical"
+    >
+
+<LinearLayout
+    android:padding="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/account_userimage"
+        android:layout_width="99dp"
+        android:layout_height="113dp"
+        android:contentDescription="@string/description"
+        android:src="@mipmap/person" />
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingStart="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/account_username"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/sohan_caterers"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/account_usercontact"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="@string/_1234567890"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            />
+
+
+        <TextView
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:id="@+id/account_useremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sohancaterers_gmail_com"
+            />
+    </LinearLayout>
+</LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_marginTop="25dp"
+        android:id="@+id/account_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/account_menu_item"/>
+
+
+</LinearLayout>

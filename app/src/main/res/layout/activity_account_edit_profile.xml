@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment.account.AccountEditProfile"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:padding="18dp"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/account_profile_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@mipmap/person"
+        android:layout_margin="10dp"
+         />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/account_image_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Photo"
+        android:layout_gravity="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"/>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/update_full_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        app:met_floatingLabel="normal"
+        android:inputType="text"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/update_user_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint=" Email"
+        app:met_floatingLabel="normal"
+        android:inputType="textEmailAddress"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/update_user_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Contact"
+        android:inputType="number"
+        app:met_floatingLabel="normal"
+        app:met_maxCharacters="10"
+        android:maxLength="10"
+        android:minLines="10"/>
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        app:met_floatingLabel="normal"/>
+<Button
+    android:id="@+id/update_profile"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Update"
+    android:background="@drawable/capsule"
+    android:textColor="@color/white"/>
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

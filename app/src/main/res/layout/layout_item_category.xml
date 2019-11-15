@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:id="@+id/item_card_view"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="12dp">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <ImageView
+
+            android:id="@+id/url"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="128dp"
+            android:scaleType="centerCrop" />
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            >
+        <TextView
+            android:id="@+id/item"
+            android:layout_height="60dp"
+            android:layout_width="match_parent"
+            android:text="@string/item_name"
+            android:textSize="15sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/price"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="@string/price"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            />
+            <TextView
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:id="@+id/add_to_cart"
+                android:background="@drawable/capsule"
+                android:textColor="@color/white"
+                android:text="Add Item"
+                android:gravity="center"
+                android:layout_marginLeft="23dp"
+                />
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

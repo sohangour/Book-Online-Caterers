@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    app:cardElevation="10dp"
+    app:cardCornerRadius="18dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginBottom="8dp"
+    android:id="@+id/event_card_view"
+    >
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <ImageView
+            android:src="@drawable/my_new_bg"
+            android:id="@+id/eventimageLink"
+            android:layout_gravity="center"
+            android:background="@drawable/round_outline"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:id="@+id/eventname"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Menu Name"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

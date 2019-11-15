@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/account_edit_profile"
+        android:icon="@drawable/ic_edit"
+        android:title="Edit Profile"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/account_contact_us"
+        android:icon="@drawable/ic_phone"
+        android:title="Contact Us"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/account_signout"
+        android:icon="@drawable/ic_powe"
+        android:title="@string/sign_out"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/account_signin"
+        android:icon="@drawable/ic_powe"
+        android:title="@string/sign_in_sign_up"
+        app:showAsAction="never" />
+
+</menu>

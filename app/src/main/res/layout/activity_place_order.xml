@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    tools:context=".CartANDPlaceOrder.PlaceOrderActivity"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+           android:focusedByDefault="false"
+            android:inputType="number"
+            android:gravity="center"
+            android:hint="Total Member"
+            android:background="@drawable/spinner"
+            android:id="@+id/total_member"
+            android:layout_height="35sp"
+            android:layout_width="130dp"
+
+            />
+    <Spinner
+        android:background="@drawable/spinner_cars"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="34sp"
+         />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_marginTop="15sp"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:orientation="horizontal">
+    <TextView
+        android:gravity="center"
+        android:text="Select Date"
+        android:background="@drawable/spinner"
+        android:id="@+id/event_date"
+        android:layout_height="35sp"
+        android:layout_width="130dp"
+        />
+    <Spinner
+        android:background="@drawable/spinner_cars"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/spinnerTime"
+        android:layout_width="match_parent"
+        android:layout_height="35sp"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15sp"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:orientation="horizontal">
+        <TextView
+            android:gravity="center"
+            android:text="Total Amount"
+            android:background="@drawable/spinner"
+            android:layout_height="35sp"
+            android:layout_width="130dp"
+            />
+         <TextView
+             android:textSize="23dp"
+             android:drawableLeft="@drawable/rupee"
+             android:id="@+id/total_amount"
+             android:inputType="number"
+             android:layout_width="match_parent"
+             android:layout_height="35sp"
+             android:background="@drawable/spinner"
+             android:text="0"
+             android:layout_marginLeft="15dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Customer Information"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/customer_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Full Name"/>
+    <EditText
+        android:id="@+id/customer_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/customer_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Contact Number"/>
+    <EditText
+        android:id="@+id/customer_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Address"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Venue Information"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
+    <EditText
+        android:id="@+id/venue_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Venue Name"/>
+    <EditText
+        android:inputType="textPostalAddress"
+        android:id="@+id/venue_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Venue Address"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/message"
+        android:textSize="15sp"
+
+        android:textColor="@color/green"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:onClick="placeOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_backgroudcorner"
+        android:text="Place Order"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

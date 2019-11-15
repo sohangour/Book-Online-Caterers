@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityFragment.account.ContactUsActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sohangour1996@gmail.com
+                      zaidkshaikh1@gmail.com
+                      dv7995@gmail.com"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:drawablePadding="20dp"/>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="   8560808809 / 9139335102"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:drawableLeft="@drawable/ic_phone_black_24dp"/>
+
+
+</LinearLayout>
